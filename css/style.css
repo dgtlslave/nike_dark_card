@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../font/museo-sans-100-webfont.woff2') format('woff2'),
+         url('../font/museo-sans-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-color: black;
+	position: relative;
+}
+.container-card {
+	min-width: 800px;
+	min-height: 600px;
+	position: absolute;
+	left: 200px; /*просто чтоб отлипить от края вьюпорта*/
+	background: url(../img/main-bg.jpg) center no-repeat;
+	background-size: contain;
+	padding: 109px 51px 100px 63px;
+
+}
+.card-viewport {
+	width: 686px;
+	height: 391px;
+	background-color: #102436;
+	border-radius: 10px;
+	position: relative;
+	-webkit-box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.82);
+	-moz-box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.82);
+	box-shadow: 0px 0px 65px 0px rgba(0,0,0,0.82);
+}
+.logo-block .logo {
+	min-width: 65px;
+	min-height: 33px;
+	margin: 24px 0 0 21px;
+	display: inline-block;
+	background: url(../img/logo.png) center no-repeat;
+	background-size: contain;
+}
+.goods-container {
+	width: 100%;
+	height: 70%;
+}
+.goods-container .goods-photo {
+	width: 444px;
+	height: 100%;
+	float: left;
+}
+.goods-container .goods-discription {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+.goods-photo .goods-photo-item {
+	width: 329px;
+	height: 159px;
+	margin: 73px 0 0 36px;
+}
+.goods-discription {
+
+}
+.goods-discription .goods-discription-name {
+	font-family: 'museo_sans100', sans-serif;
+	color: #e1e1e1;
+	font-size: 24px;
+	font-weight: 100;
+  padding: 16px 0 16px 0;
+	text-align: left;
+	margin: 0;
+}
+.goods-discription .goods-discription-style {
+	font-family: 'museo_sans100', sans-serif;
+	padding-bottom: 24px;
+	color: #e1e1e1;
+	font-size: 14px;
+	font-weight: 100;
+	opacity: .54;
+	text-align: left;
+	margin: 0;
+}
+.rating {
+	margin: 0 0 23px 0;
+}
+.star1, .star2, .star3 {
+	color: #e4bb2f;
+}
+.star4, .star5 {
+	color: #9ca2ab;
+	opacity: .59;
+}
+
+/*
+.rating .star {
+	width: 12px;
+	height: 12px;
+	opacity: .54;
+	background-color: gray;
+
+}*/
+.selects .select-size, .selects .select-qty {
+	width: 69px;
+	height: 32px;
+	font-family: 'museo_sans100', sans-serif;
+	color: #4b535e;
+	font-size: 14px;
+	text-align: center;
+	opacity: .54;
+	color: #898f98;
+}
+select {
+ background-image: url(../img/rectangle.png);
+ background-color: transparent;
+ background-position: 85% 50%;
+ background-repeat: no-repeat;
+ padding-left: 10px;
+ -webkit-appearance:none;
+ -moz-appearance:none;
+ appearance:none;
+}
+.selects .select-size .option-size {
+	text-align: center;
+	opacity: .54;
+}
+.button {
+	display: inline-block;
+	color: #e1e1e1;
+	text-decoration: none;
+	font-family: 'museo_sans100', sans-serif;
+
+}
+.border {
+	display: inline-block;
+	width: 184px;
+	height: 40px;
+	border: 1px solid #e1e1e1;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 11px;
+	margin-top: 29px;
+	opacity: .54;
+	background-color: #4c525a;
+}
+.slider {
+	padding-left: 168px;
+}
+.slider .slide-changer {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.slider .main {
+	width: 14px;
+	height: 14px;
+	background-color: #26324f;
+	border: 2px solid #7d8590;
+	box-sizing: content-box;
+
+}
+.slider .white {
+	background-color: #ffffff;
+	vertical-align: 4px;
+}
+.slider .red {
+	background-color: #ed3333;
+	vertical-align: 4px;
+}
+.slider .blue {
+	background-color: #29e3ea;
+	vertical-align: 4px;
+}
+/*.selects .select-size:after {
+  content: "∨";
+  padding: 0 8px;
+  font-size: 12px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}*/
+
+
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
